@@ -1,0 +1,13 @@
+vamos de novo, Script em Python puro para modificar um arquivo de texto com extensão ".CNC"
+- Exibir uma caixa de dialogo pra procurar um arquivo ".cnc"
+- verificar se a primeira linha é "G70" ou "G21", se for G70 continuar executando, se for G21 não modificar o arquivo e exibir uma mensagem em Pop-up dizendo "Arquivo .CNC Já Modificado" e um botão Ok pra fechar e encerrar o script.
+- remover as 5 primeiras linhas
+- A linha que conter "T0" substituir por "g21"
+- todas as linhas que contenham "M21" substituir por "M5G0Z5"
+- substituir a última linha que contenha "M5G0Z5" para "M21"
+- Verificar todas as linhas que começam com "G01", "G02" ou "G03" se a linha acima for "M20" e a linha abaixo começar com "G01", "G02" ou "G03" e essa linha não conter a letra "F" devera ser adicionado no seu final a sequencia "F1500," se alguma linha for adicionada com essa sequencia exibir ao fim do programa a mensagem em Pop-up "F1500, Adicionado aos Recortes" e um botão ok para fechar, se não for encontrada nenhuma linha pra alterar exibir uma mensagem em Pop-up "Nenhum Recorte encontrado" e um botão ok para fechar.
+- Adicionar na primeira linha do arquivo a seguintes sequencia "(Arquivo Modificado com a AI ChatGPT AI Python)"
+- ao final do programa gerar uma mensagem em Pop-up "&& M21 Substituídos" sendo "&&" a quantidade de "M21" que foi substituída.
+- Salvar o arquivo alterado com o nome extensão "temp.cnc"
+- Renomear o arquivo original adicionando "_ORI" em seu nome.
+- Renomear o arquivo "temp.cnc" com o mesmo nome e extensão do arquivo que foi aberto.
