@@ -1,0 +1,1 @@
+Script simples que faz algumas alterações em arquivos .cnc gerados pelo software da maquina e deleta/altera pra execução correta.
